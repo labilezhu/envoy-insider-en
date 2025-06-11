@@ -1,0 +1,5 @@
+{
+    "window.title": "Is-In-en/source ${separator} ${dirty}${activeEditorShort} ${separator}${appName}",
+    "window.zoomPerWindow": false,
+    "window.titleSeparator": "- "
+}
