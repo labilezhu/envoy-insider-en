@@ -1,4 +1,4 @@
-# Envoy main process and concepts
+# Main process and concepts
 
 ## upstream/upstream
 

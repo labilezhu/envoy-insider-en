@@ -1,4 +1,4 @@
-# Istio and Envoy Metrics
+# Envoy Metrics
 
 
 Metrics monitoring is probably the most important aspect of DevOps monitoring. But it can also be the hardest. You can find Grafana monitoring dashboards for all sorts of systems and middleware on the web, and most of them are beautifully designed to make it feel like the monitoring is already perfect.  

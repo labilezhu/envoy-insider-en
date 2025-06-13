@@ -1,6 +1,6 @@
-# Envoy Metrics
+# Metrics
 
-## Envoy Metrics Overview
+## Metrics Overview
 
 
 One of the main goals of Envoy is to make the network easy to understand. Envoy generates a large amount of statistical information depending on how it is configured. In general, statistics (metrics) fall into three categories:
