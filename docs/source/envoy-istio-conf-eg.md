@@ -1,4 +1,4 @@
-# Envoy Configuration Example under Istio
+# Configuration Example under Istio
 
 Most books and documents describe a software architecture in terms of concepts, high-level design, fundamentals, and abstraction processes in a hierarchical, top-down fashion. This approach is very collegiate and a very solid choice. However, this section does not adopt this approach. This section starts with an example of a site analysis in a specific scenario. Specifically and as a whole, it first gives the reader a perceptual understanding of the design. Then go on to analyze why it is "configured" the way it is, the abstract concepts and basic principles behind it. In this way, it can keep the interest of those who learn, and is more in line with the natural human, abstract learning habit of distilling the abstract from the concrete. After all, I'm a person who has read the teacher training program, although even a "teaching certificate" did not get.
 

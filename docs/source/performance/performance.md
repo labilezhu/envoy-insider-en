@@ -1,4 +1,4 @@
-# Istio/Envoy Performance
+# Envoy Performance
 
 
 ## Articles from my blog

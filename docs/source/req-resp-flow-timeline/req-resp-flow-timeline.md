@@ -2,7 +2,7 @@
 typora-root-url: ../..
 ---
 
-# Envoy request and response scheduling 
+# Request and response scheduling 
 🎤 Before get start. I'd like to talk about some of the story reasons for writing this section. Why should I study Envoy's request and response scheduling?  
 It started with a customer request to do some research on fast recovery from Istio worker node failures. To do this, I went through a lot of Istio/Envoy documentation, blogs, and a lot of info:
  - Health Detection
