@@ -1,5 +1,8 @@
 ![Book Cover](./book-cover-mockup.jpg)
 
+
+
+
 # Foreword
 
 ## Overview of this book
@@ -94,6 +97,8 @@ There is a Chinese version: [中文版](https://envoy-insider.mygraphql.com/zh-c
 ![](wechat-reward-qrcode.jpg)
 
 
+![Book Cover](./book-cover-800.jpg)
+
 # Catalog
 
 
@@ -103,15 +108,19 @@ There is a Chinese version: [中文版](https://envoy-insider.mygraphql.com/zh-c
 :includehidden:
 
 ch0/index
-ch1-istio-arch/index
-ch2-envoy/index
-ch4-istio-data-plane/index
-ch5-istio-ambient/ch5-istio-ambient.md
+envoy-overview.md
+envoy-istio-conf-eg.md
+envoy-high-level-flow/envoy-high-level-flow.md
+arch/arch.md
+req-resp-flow-timeline/req-resp-flow-timeline.md
+connection-life/connection-life.md
+envoy-istio-metrics/index.md
+upstream/upstream.md
+socket/socket.md
 performance/performance.md
 disruptions/disruptions.md
 observability/observability.md
 troubleshooting/troubleshooting.md
-dev-istio/dev-istio.md
 ```
 
 # Appendix
@@ -123,4 +132,5 @@ dev-istio/dev-istio.md
 
 appendix-lab-env/index.md
 ```
+
 

@@ -13,6 +13,7 @@ Mark Zhu
 ## comic
 
 https://www.canva.com/design/DAErxipTrrA/_CgaEeKJ6s2CoOISkCX1PA/edit
+https://www.canva.com/mockups/mockup/8MNf8FOXU
 
 ## book convert mockup
 
