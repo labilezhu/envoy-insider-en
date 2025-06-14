@@ -121,16 +121,6 @@ performance/performance.md
 disruptions/disruptions.md
 observability/observability.md
 troubleshooting/troubleshooting.md
+dev-envoy/dev-envoy.md
 ```
-
-# Appendix
-
-```{toctree}
-:caption: Appendix
-:maxdepth: 5
-:includehidden: 
-
-appendix-lab-env/index.md
-```
-
 
