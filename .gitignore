@@ -4,6 +4,7 @@
 
 **/**.bkp
 **/**.dtmp
+**/**.mdb
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
@@ -69,6 +70,7 @@ nosetests.xml
 coverage.xml
 *.cover
 *.py,cover
+*.mdb
 .hypothesis/
 .pytest_cache/
 cover/

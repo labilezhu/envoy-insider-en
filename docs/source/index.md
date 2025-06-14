@@ -7,19 +7,19 @@
 
 ## Overview of this book
 
-This book is called Envoy Insider. It is a book in progress, now in draft stage.
+This book is called Envoy Insider. It is a book in progress, now in draft stage. It’s a book that dives deep into the mechanisms and implementations of Envoy Proxy. Much of its content comes from my previous book "[Istio & Envoy Insider](https://istio-insider.mygraphql.com/en/latest/)", from which I’ve extracted the Envoy part and reorganized it into a standalone book. The purpose is to help readers focus solely on Envoy without distraction from Istio. Some content is irrelevant or inapplicable to Istio, so it makes sense to split them. Moving forward, **"Istio & Envoy Insider" will only update Istio-related content, while this new book will carry all updates related to Envoy.**
+
+Some readers may wonder why split Envoy into a separate book. Recently, I’ve noticed that Envoy is used far beyond Istio. It has become a standalone and widely adopted programmable proxy, used across various cloud-native architectures, AI gateways, edge computing, and many non-Istio projects. It’s now infrastructure for infrastructures. That’s why I believe a dedicated book is necessary to help non-Istio readers understand its design and implementation.
 
 ### What this book is about
 
-This book includes: Envoy source code deep dive, in-depth Envoy fundamentals  analysis , Istio fundamentals analysis. But it's not a traditional "deep dive xyz source code" type of book. on the contrary, I have done my best not to directly paste source code in the book. Reading source code is a necessary step to grasp the details of the implementation, but browsing source code in a book is generally a very bad experience. So, this book uses source code navigation diagrams to let readers understand the full picture of the implementation, rather than getting lost in the details of fragmented source code snippets and forgetting the whole picture.
+This book includes: Envoy source code deep dive, in-depth Envoy fundamentals  analysis. But it's not a traditional "deep dive xyz source code" type of book. on the contrary, I have done my best not to directly paste source code in the book. Reading source code is a necessary step to grasp the details of the implementation, but browsing source code in a book is generally a very bad experience. So, this book uses source code navigation diagrams to let readers understand the full picture of the implementation, rather than getting lost in the details of fragmented source code snippets and forgetting the whole picture.
 
 In this book, I've tried to think as systematically as possible from a design and implementation perspective:
 - The design and implementation details of Envoy
-- Why Istio is what it is
 - The Truth Behind Those Magic Configurations: Linux + Envoy
   - How traffic is intercepted to the Envoy using Linux's netfilter technology.
   - How istiod programs the Envoy to fulfill the traffic policies of the Service Mesh.
-- What Istio might look like in the future
 
 
 The book is just a collection of thoughts and notes after I've been researching and using Istio for a while. I've just been troubleshooting some Istio/Envoy related functionality and performance issues, and browsing and debugging some Istio/Envoy code.
@@ -28,16 +28,16 @@ While diving into Istio. I found that there is a lot of valuable information on 
 
 ### What this book is not
 
-This book is not a user's manual. It does not teach how to learn Istio from a user's point of view, it does not preach how powerful Istio is, and it does not teach how to use Istio, there are too many excellent books, articles, and documents on this topic.
+This book is not a user's manual. It does not teach how to learn Envoy from a user's point of view, it does not preach how powerful Envoy is, and it does not teach how to use Envoy, there are too many excellent books, articles, and documents on this topic.
 
-> 🤷 : [Yet, another](https://en.wikipedia.org/wiki/Yet_another) Istio User Guide?  
+> 🤷 : [Yet, another](https://en.wikipedia.org/wiki/Yet_another) Envoy User Guide?  
 > 🙅 : No!
 
 
 
 ### Target Audience
 
-This book focuses on the design and implementation mechanism of Istio/Envoy. It is assumed that the reader already has some experience in using Istio and is interested in further studying its implementation mechanism.
+This book focuses on the design and implementation mechanism of Envoy. It is assumed that the reader already has some experience in using Envoy and is interested in further studying its implementation mechanism.
 
 ### Book access address
 - [https://envoy-insider.mygraphql.com](https://envoy-insider.mygraphql.com/en)
@@ -46,7 +46,7 @@ This book focuses on the design and implementation mechanism of Istio/Envoy. It 
 
 
 ### About the Author
-My name is Mark Zhu, a middle-aged programmer with little hair. I am just an entry-level Istio/Envoy contributor, and for the time being I have only contribute some github issues and documentation Pull Requests.
+My name is Mark Zhu, a balding middle-aged programmer. I’m not an Envoy expert—at most, a contributor to the Envoy Docs. Not even an employee of a tech giant.
 
 Why do I learn from others and write a book when my level is limited? Because of this sentence:
 > You don't need to be great to get started, but you do need to get started to be great.
@@ -85,7 +85,7 @@ If you reproduce or modify any text or image, please give credit to the original
 
 ### Feedback
 As this is an open source interactive book, feedback from readers is of course very important. If you find a mistake in the book, or have a better suggestion, you may want to submit an Issue:
-[https://github.com/labilezhu/envoy-insider/issues](https://github.com/labilezhu/envoy-insider/issues)
+[https://github.com/labilezhu/envoy-insider-en/issues](https://github.com/labilezhu/envoy-insider-en/issues)
 
 
 
