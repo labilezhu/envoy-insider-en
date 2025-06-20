@@ -7,7 +7,7 @@
 
 ## Overview of this book
 
-This book is called Envoy Insider. It is a book in progress, now in draft stage. It’s a book that dives deep into the mechanisms and implementations of Envoy Proxy. Much of its content comes from my previous book "[Istio & Envoy Insider](https://istio-insider.mygraphql.com/en/latest/)", from which I’ve extracted the Envoy part and reorganized it into a standalone book. The purpose is to help readers focus solely on Envoy without distraction from Istio. Some content is irrelevant or inapplicable to Istio, so it makes sense to split them. Moving forward, **"Istio & Envoy Insider" will only update Istio-related content, while this new book will carry all updates related to Envoy.**
+This book is called "Envoy Proxy Insider". It is a book in progress, now in draft stage. It’s a book that dives deep into the mechanisms and implementations of Envoy Proxy. Much of its content comes from my previous book "[Istio & Envoy Insider](https://istio-insider.mygraphql.com/en/latest/)", from which I’ve extracted the Envoy part and reorganized it into a standalone book. The purpose is to help readers focus solely on Envoy without distraction from Istio. Some content is irrelevant or inapplicable to Istio, so it makes sense to split them. Moving forward, **"Istio & Envoy Insider" will only update Istio-related content, while this new book will carry all updates related to Envoy.**
 
 Some readers may wonder why split Envoy into a separate book. Recently, I’ve noticed that Envoy is used far beyond Istio. It has become a standalone and widely adopted programmable proxy, used across various cloud-native architectures, AI gateways, edge computing, and many non-Istio projects. It’s now infrastructure for infrastructures. That’s why I believe a dedicated book is necessary to help non-Istio readers understand its design and implementation.
 
@@ -33,7 +33,7 @@ This book is not a user's manual. It does not teach how to learn Envoy from a us
 > 🤷 : [Yet, another](https://en.wikipedia.org/wiki/Yet_another) Envoy User Guide?  
 > 🙅 : No!
 
-
+If you want to focus on the native Envoy Proxy instead of Istio, I recommend reading my other book: [Envoy Proxy Insider](https://envoy-insider.mygraphql.com/en/latest/). This book is a sister book of Istio & Envoy Insider, focusing on the design and implementation of the native Envoy Proxy.
 
 ### Target Audience
 
