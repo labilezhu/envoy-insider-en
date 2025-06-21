@@ -561,7 +561,7 @@ To do a good job of monitoring, you first need to have a deep understanding of t
 :::{figure-md} Figure: Map of istio-proxy metrics
 :class: full-width
 
-<img src="/ch2-envoy/envoy-istio-metrics/index.assets/envoy-istio-metrics.drawio.svg" alt="Figure - Map of istio-proxy metrics">
+<img src="/envoy-istio-metrics/index.assets/envoy-istio-metrics.drawio.svg" alt="Figure - Map of istio-proxy metrics">
 
 *Figure: Map of istio-proxy metrics*
 :::

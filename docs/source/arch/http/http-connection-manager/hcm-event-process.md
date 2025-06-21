@@ -3,12 +3,12 @@
 ## General flow of HTTP reverse proxy
 
 The overall HTTP reverse proxy flow for socket event driven collaboration is as follows:
-![Figure: Socket event-driven HTTP reverse proxy total flow](/ch2-envoy/arch/event-driven/event-driven.assets/envoy-event-model-proxy.drawio.svg )
+![Figure: Socket event-driven HTTP reverse proxy total flow](/arch/event-driven/event-driven.assets/envoy-event-model-proxy.drawio.svg )
 
 The diagram shows that there are 4 types of events driving the whole process. Each of them will be analyzed in later sections.
 
 To avoid getting lost in the details of the individual steps at once, the reader is advised to review the total flow of all the steps in the previous examples: 
-{doc}`/ch2-envoy/envoy-istio-conf-eg`.
+{doc}`/envoy-istio-conf-eg`.
 
 The following is a 5-step explanation of the HTTP proxy process, using HTTP/1.1 as an example:
 1. Downstream Read Request module collaboration
@@ -21,7 +21,7 @@ The following is a 5-step explanation of the HTTP proxy process, using HTTP/1.1 
 
 ### Downstream Read Request Module Collaboration
 :::{figure-md} Figure : Downstream Read-Ready Module Collaboration
-<img src="/ch2-envoy/arch/http/http-connection-manager/hcm-event-process.assets/envoy-hcm-read-down-req.drawio.svg" alt="Figure - Downstream Read-Ready Module Collaboration">
+<img src="/arch/http/http-connection-manager/hcm-event-process.assets/envoy-hcm-read-down-req.drawio.svg" alt="Figure - Downstream Read-Ready Module Collaboration">
 
 *Diagram: Downstream Read-Ready Module Collaboration*
 :::
@@ -42,7 +42,7 @@ A rough description of the process:
 #### Downstream Request Router Module Collaboration
 
 :::{figure-md} Figure: Downstream Request Router Module Collaboration
-<img src="/ch2-envoy/arch/http/http-connection-manager/hcm-event-process.assets/envoy-hcm-router-on-down-req-complete.drawio.svg" alt="Figure - Downstream Request Router Module Collaboration">
+<img src="/arch/http/http-connection-manager/hcm-event-process.assets/envoy-hcm-router-on-down-req-complete.drawio.svg" alt="Figure - Downstream Request Router Module Collaboration">
 
 *Figure: Downstream Request Router Module Collaboration*
 :::
@@ -66,7 +66,7 @@ A rough description of the process:
 ### Upstream Write Request Module Collaboration
 
 :::{figure-md} Figure: Upstream connect & write module collaboration
-<img src="/ch2-envoy/arch/http/http-connection-manager/hcm-event-process.assets/envoy-hcm-upstream-flow-connected-write.drawio.svg" alt="Figure - Upstream connect & write module collaboration">
+<img src="/arch/http/http-connection-manager/hcm-event-process.assets/envoy-hcm-upstream-flow-connected-write.drawio.svg" alt="Figure - Upstream connect & write module collaboration">
 
 *Figure: Upstream connect & write module collaboration*
 :::
@@ -83,7 +83,7 @@ A rough description of the flow:
 
 ### Upstream Read Response Module Collaboration
 :::{figure-md} Figure: Upstream Read-Response Module Collaboration
-<img src="/ch2-envoy/arch/http/http-connection-manager/hcm-event-process.assets/envoy-hcm-upstream-flow-read-resp.drawio.svg" alt="Figure - Upstream Read-Response Module Collaboration">
+<img src="/arch/http/http-connection-manager/hcm-event-process.assets/envoy-hcm-upstream-flow-read-resp.drawio.svg" alt="Figure - Upstream Read-Response Module Collaboration">
 
 *Figure: Upstream Read-Response Module Collaboration*
 :::
@@ -92,7 +92,7 @@ A rough description of the flow:
 ### Downstream Write Response Module Collaboration
 
 :::{figure-md} Figure: Downstream Write Response Module Collaboration
-<img src="/ch2-envoy/arch/http/http-connection-manager/hcm-event-process.assets/envoy-hcm-write-down-resp.drawio.svg" alt="Figure - Downstream Write Response module collaboration">
+<img src="/arch/http/http-connection-manager/hcm-event-process.assets/envoy-hcm-write-down-resp.drawio.svg" alt="Figure - Downstream Write Response module collaboration">
 
 *Figure: Downstream Write Response Module Collaboration*
 :::

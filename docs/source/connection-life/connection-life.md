@@ -15,7 +15,7 @@ Therefore, headers like `Connection: Close` and `Connection: Keepalive` from Dow
 :::{figure-md}
 :class: full-width
 
-<img src="/ch2-envoy/req-resp-flow-timeline/req-resp-flow-timeline.assets/req-resp-flow-timeline.drawio.svg" alt="Figure - Envoy connecting timeout timing lines
+<img src="/req-resp-flow-timeline/req-resp-flow-timeline.assets/req-resp-flow-timeline.drawio.svg" alt="Figure - Envoy connecting timeout timing lines
 ">
 
 *Figure : Envoy connecting timeout timing lines*

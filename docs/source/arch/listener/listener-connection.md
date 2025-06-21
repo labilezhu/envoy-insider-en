@@ -1,7 +1,7 @@
 # Listener connection establishment details
 
 The process and relationship between event-driven and connection establishment:
-![envoy-event-model-accept](/ch2-envoy/arch/event-driven/event-driven.assets/envoy-event-model-accept.drawio.svg)
+![envoy-event-model-accept](/arch/event-driven/event-driven.assets/envoy-event-model-accept.drawio.svg)
 
 1. The Envoy worker thread hangs in the `epoll_wait()` method. The thread is moved out of the kernel's runnable queue. the thread sleeps.
 2. client establishes a connection. server kernel completes 3 handshakes, triggering a listen socket event.
@@ -16,7 +16,7 @@ Take a look at the code to get a general idea of how the connection is establish
 
 :::{figure-md}
 :class: full-width
-<img src="/ch2-envoy/arch/listener/listener-connection.assets/envoy-classes-accept-flow.drawio.svg" alt="Figure - Listener TCP Connection Establishment Process">
+<img src="/arch/listener/listener-connection.assets/envoy-classes-accept-flow.drawio.svg" alt="Figure - Listener TCP Connection Establishment Process">
 
 *Figure: Listener TCP Connection Establishment Process*
 :::

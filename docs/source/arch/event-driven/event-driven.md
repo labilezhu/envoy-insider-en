@@ -6,7 +6,7 @@ typora-root-url: ../../..
 
 :::{figure-md} Figure: Event Loop of Envoy
 
-<img src="/ch2-envoy/arch/event-driven/event-driven.assets/envoy-event-model-loop.drawio.svg" alt="Figure - Event Loop of Envoy">
+<img src="/arch/event-driven/event-driven.assets/envoy-event-model-loop.drawio.svg" alt="Figure - Event Loop of Envoy">
 
 *Figure: Event Loop of Envoy*
 :::
@@ -29,14 +29,14 @@ Let's explain the flow in the diagram:
 ## General flow of HTTP Reverse Proxy
 
 The overall flow of the socket event-driven HTTP reverse proxy is as follows:
-![Figure: Socket event-driven HTTP reverse proxy general flow](/ch2-envoy/arch/event-driven/event-driven.assets/envoy-event-model-proxy.drawio.svg)
+![Figure: Socket event-driven HTTP reverse proxy general flow](/arch/event-driven/event-driven.assets/envoy-event-model-proxy.drawio.svg)
 
 The diagram shows that there are 5 types of events driving the whole process. Each of them will be analyzed in later sections.
 
 ## Downstream TCP connection establishment
 
 Now let's look at the process and the relationship between the event drivers and the connection establishment:
-![envoy-event-model-accept](/ch2-envoy/arch/event-driven/event-driven.assets/envoy-event-model-accept.drawio.svg)
+![envoy-event-model-accept](/arch/event-driven/event-driven.assets/envoy-event-model-accept.drawio.svg)
 
 
 1. The Envoy worker thread hangs in the `epoll_wait()` method. The thread is moved out of the kernel's runnable queue. the thread sleeps.
@@ -57,7 +57,7 @@ Envoy uses `libevent`, an event library written in C, with C++ OOP encapsulation
 
 :::{figure-md} Figure: Abstract encapsulation model of Envoy events
 
-<img src="/ch2-envoy/arch/event-driven/event-driven.assets/abstract-event-model.drawio.svg" alt="Figure - Abstract encapsulation model of Envoy events">
+<img src="/arch/event-driven/event-driven.assets/abstract-event-model.drawio.svg" alt="Figure - Abstract encapsulation model of Envoy events">
 
 *Figure: Abstract encapsulation model of Envoy events*
 :::

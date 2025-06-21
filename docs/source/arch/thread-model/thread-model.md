@@ -13,7 +13,7 @@ Simply put, Envoy uses the thread design pattern of non-blocking + Event Driven 
 - [Reactor pattern](https://en.wikipedia.org/wiki/Reactor_pattern)
 - [Event-driven architecture (EDA)](https://en.wikipedia.org/wiki/Event-driven_architecture)
 
-> This section assumes that the reader has been introduced to Envoy's event-driven model. If not, you can read the book's {doc}`/ch2-envoy/arch/event-driven/event-driven`.
+> This section assumes that the reader has been introduced to Envoy's event-driven model. If not, you can read the book's {doc}`/arch/event-driven/event-driven`.
 > This section references: [Envoy threading model - Matt Klein](https://blog.envoyproxy.io/envoy-threading-model-a8d44b922310)
 
 Unlike the single thread of Node.JS, Envoy supports multiple Worker Threads to run their own independent event loops in order to take full advantage of multi-Core CPUs. This design comes at a cost, because multiple worker threads / main threads are not completely independent from each other. They need to share some data, such as:
@@ -90,7 +90,7 @@ The following figure is based on [Envoy threading model - Matt Klein](https://bl
 
 :::{figure-md} Figure: ThreadLocal Classes
 
-<img src="/ch2-envoy/arch/thread-model/thread-local-classes.drawio.svg" alt="Figure - ThreadLocal Classes">
+<img src="/arch/thread-model/thread-local-classes.drawio.svg" alt="Figure - ThreadLocal Classes">
 
 *Figure: ThreadLocal Classes*
 :::

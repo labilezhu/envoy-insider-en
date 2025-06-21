@@ -62,7 +62,7 @@ Because the various buffers in the HTTP/2 stack are fairly complicated, each pat
 
 
 ```{note}
-Readers who don't know much about Envoy's http-connection-manager and http filter chain are advised to read the following section of this book: {doc}`/ch2-envoy/arch/http/http-connection-manager/http-connection-manager` section. The following assumes that the reader already knows this.
+Readers who don't know much about Envoy's http-connection-manager and http filter chain are advised to read the following section of this book: {doc}`/arch/http/http-connection-manager/http-connection-manager` section. The following assumes that the reader already knows this.
 ```
 
 ### HTTP2 flow control general flow
@@ -79,7 +79,7 @@ Readers who don't know much about Envoy's http-connection-manager and http filte
 
 :::{figure-md} Figure: Downstream connection backs-up and backpressure overview
 
-<img src="/ch2-envoy/arch/flow-control/flow-control-1-2-downstream-backs-up-overview.drawio.svg" alt="Figure Downstream connection backs-up and backpressure overview">
+<img src="/arch/flow-control/flow-control-1-2-downstream-backs-up-overview.drawio.svg" alt="Figure Downstream connection backs-up and backpressure overview">
 
 *Figure: Downstream connection backs-up and backpressure overview*
 :::
@@ -89,7 +89,7 @@ Readers who don't know much about Envoy's http-connection-manager and http filte
 
 :::{figure-md} Figure: Upstream connection back up and backpressure
 
-<img src="/ch2-envoy/arch/flow-control/flow-control-1-upstream-backs-up-simple.drawio.svg" alt="Figure Upstream connection back up and backpressure">
+<img src="/arch/flow-control/flow-control-1-upstream-backs-up-simple.drawio.svg" alt="Figure Upstream connection back up and backpressure">
 
 *Figure: Upstream connection back up and backpressure*
 :::
@@ -151,7 +151,7 @@ Example:
 
 :::{figure-md} Figure: Upstream connection and Upstream http stream back-up at the same time
 
-<img src="/ch2-envoy/arch/flow-control/flow-control-2-upstream-backs-up-counter.drawio.svg" alt="Figure - Upstream connection and Upstream http stream back-up at the same time">
+<img src="/arch/flow-control/flow-control-2-upstream-backs-up-counter.drawio.svg" alt="Figure - Upstream connection and Upstream http stream back-up at the same time">
 
 *Figure: Upstream connection and Upstream http stream back-up at the same time*
 :::
@@ -165,7 +165,7 @@ Example:
 
 :::{figure-md} Figure: Collaboration of Router::Filter during Upstream back-up
 
-<img src="/ch2-envoy/arch/flow-control/flow-control-3-upstream-backs-up-router.drawio.svg" alt="Figure - Collaboration of Router--Filter during Upstream back-up">
+<img src="/arch/flow-control/flow-control-3-upstream-backs-up-router.drawio.svg" alt="Figure - Collaboration of Router--Filter during Upstream back-up">
 
 *Figure: Collaboration of Router::Filter during Upstream back-up*
 :::
@@ -179,7 +179,7 @@ Example:
 
 :::{figure-md} Figure: Collaboration of Http::ConnectionManagerImpl when Downstream back-up
 
-<img src="/ch2-envoy/arch/flow-control/flow-control-4-downstream-conn-backs-up.drawio.svg" alt="Figure - Collaboration of Http--ConnectionManagerImpl when Downstream back-up">
+<img src="/arch/flow-control/flow-control-4-downstream-conn-backs-up.drawio.svg" alt="Figure - Collaboration of Http--ConnectionManagerImpl when Downstream back-up">
 
 *Figure: Collaboration of Http::ConnectionManagerImpl when Downstream back-up*
 :::
@@ -257,7 +257,7 @@ For the low watermark path:
 
 :::{figure-md} Figure: Collaboration of Router::Filter during Upstream back-up(2)
 
-<img src="/ch2-envoy/arch/flow-control/flow-control-3-upstream-backs-up-router.drawio.svg" alt="Figure - Collaboration of Router--Filter during Upstream back-up">
+<img src="/arch/flow-control/flow-control-3-upstream-backs-up-router.drawio.svg" alt="Figure - Collaboration of Router--Filter during Upstream back-up">
 
 *Figure: Collaboration of Router::Filter during Upstream back-up*
 :::
@@ -296,7 +296,7 @@ As with the downstream network buffer, it is important that as new upstream stre
 
 :::{figure-md} Figure: Collaboration of Router::Filter when Upstream connection back-up
 
-<img src="/ch2-envoy/arch/flow-control/flow-control-3-2-upstream-conn-backs-up-router.drawio.svg" alt="Figure - Collaboration of Router--Filter when Upstream connection back-up">
+<img src="/arch/flow-control/flow-control-3-2-upstream-conn-backs-up-router.drawio.svg" alt="Figure - Collaboration of Router--Filter when Upstream connection back-up">
 
 *Figure: Collaboration of Router::Filter when Upstream connection back-up*
 :::

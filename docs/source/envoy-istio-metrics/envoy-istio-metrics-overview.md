@@ -9,7 +9,7 @@ If you're like me, you're a hothead. Then the image below is Envoy's metrics map
 
 :::{figure-md} Figure: Envoy@Istio metrics
 
-<img src="/ch2-envoy/envoy-istio-metrics/index.assets/envoy-istio-metrics.drawio.svg" alt="Figure - Envoy@Istio metrics">
+<img src="/envoy-istio-metrics/index.assets/envoy-istio-metrics.drawio.svg" alt="Figure - Envoy@Istio metrics">
 
 *Figure: Envoy@Istio metrics*
 :::
@@ -20,7 +20,7 @@ If you're like me, you're a hothead. Then the image below is Envoy's metrics map
 :::{figure-md}
 :class: full-width
 
-<img src="/ch2-envoy/req-resp-flow-timeline/req-resp-flow-timeline.assets/req-resp-flow-timeline.drawio.svg" alt="Figure - Metrics on the Envoy Request and Response Timeline">
+<img src="/req-resp-flow-timeline/req-resp-flow-timeline.assets/req-resp-flow-timeline.drawio.svg" alt="Figure - Metrics on the Envoy Request and Response Timeline">
 
 *Figure: Metrics on the Envoy Request and Response Timeline*
 :::

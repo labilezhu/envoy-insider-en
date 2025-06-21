@@ -70,7 +70,7 @@ Interactive book:
 :::{figure-md} Figure : Envoy Request and Response Scheduling of HTTP1
 :class: full-width
 
-<img src="/ch2-envoy/req-resp-flow-timeline/req-resp-flow-timeline.assets/req-resp-flow-timeline-schedule.drawio.svg" alt="Figure - Envoy Request and Response Scheduling of HTTP1">
+<img src="/req-resp-flow-timeline/req-resp-flow-timeline.assets/req-resp-flow-timeline-schedule.drawio.svg" alt="Figure - Envoy Request and Response Scheduling of HTTP1">
 
 *Figure : Envoy Request and Response Scheduling of HTTP1*
 :::
@@ -81,7 +81,7 @@ Interactive book:
 :::{figure-md} Figure : Envoy Request and Response Scheduling of HTTP/2
 :class: full-width
 
-<img src="/ch2-envoy/req-resp-flow-timeline/req-resp-flow-timeline.assets/life-of-a-request-overview-h2.drawio.svg" alt="Figure - Envoy Request and Response Scheduling of HTTP/2">
+<img src="/req-resp-flow-timeline/req-resp-flow-timeline.assets/life-of-a-request-overview-h2.drawio.svg" alt="Figure - Envoy Request and Response Scheduling of HTTP/2">
 
 *Figure : Envoy Request and Response Scheduling of HTTP/2*
 :::
@@ -148,7 +148,7 @@ Let's start with the request component flow part, the flowchart can be reasoned 
 :::{figure-md} Figure: Envoy Request Scheduling Flowchart of HTTP/1
 :class: full-width
 
-<img src="/ch2-envoy/req-resp-flow-timeline/req-resp-flow-timeline.assets/req-resp-flow-timeline-flowchart.drawio.svg" alt="Figure - Envoy Request Scheduling Flowchart of HTTP/1">
+<img src="/req-resp-flow-timeline/req-resp-flow-timeline.assets/req-resp-flow-timeline-flowchart.drawio.svg" alt="Figure - Envoy Request Scheduling Flowchart of HTTP/1">
 
 *Figure: Envoy Request Scheduling Flowchart of HTTP/1*
 :::
@@ -158,7 +158,7 @@ Let's start with the request component flow part, the flowchart can be reasoned 
 :::{figure-md} Figure: Envoy Request Scheduling Flowchart of HTTP/2
 :class: full-width
 
-<img src="/ch2-envoy/req-resp-flow-timeline/req-resp-flow-timeline.assets/req-resp-flow-timeline-flowchart-h2.drawio.svg" alt="Figure - Envoy Request Scheduling Flowchart of HTTP/2">
+<img src="/req-resp-flow-timeline/req-resp-flow-timeline.assets/req-resp-flow-timeline-flowchart-h2.drawio.svg" alt="Figure - Envoy Request Scheduling Flowchart of HTTP/2">
 
 *Figure: Envoy Request Scheduling Flowchart of HTTP/2*
 :::
@@ -185,7 +185,7 @@ The following diagram shows the request and response timeline, and the associate
 :::{figure-md} Figure: Envoy Request and Response Timeline
 :class: full-width
 
-<img src="/ch2-envoy/req-resp-flow-timeline/req-resp-flow-timeline.assets/req-resp-flow-timeline.drawio.svg" alt="Figure - Envoy Request and Response Timeline">
+<img src="/req-resp-flow-timeline/req-resp-flow-timeline.assets/req-resp-flow-timeline.drawio.svg" alt="Figure - Envoy Request and Response Timeline">
 
 *Figure: Envoy Request and Response Timeline*
 :::

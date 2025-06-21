@@ -29,7 +29,7 @@ yq eval -P > envoy@istio-conf-eg-inbound.envoy_conf.yaml
 ```
 
 ```{note}
-Download here {download}`envoy@istio-conf-eg-inbound.envoy_conf.yaml </ch2-envoy/envoy-istio-conf-eg.assets/envoy@istio-conf-eg-inbound.envoy_conf.yaml>` .
+Download here {download}`envoy@istio-conf-eg-inbound.envoy_conf.yaml </envoy-istio-conf-eg.assets/envoy@istio-conf-eg-inbound.envoy_conf.yaml>` .
 ```
 
 Without go through the description of the configuration file for now, let's just look at the analysis process, then, in the end, will return to this configuration.

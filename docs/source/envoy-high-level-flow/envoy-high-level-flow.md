@@ -2,7 +2,7 @@
 
 ## upstream/upstream
 
-Let's go back to the {doc}`/ch2-envoy/envoy-istio-conf-eg` example:
+Let's go back to the {doc}`/envoy-istio-conf-eg` example:
 
 
 :::{figure-md}
@@ -37,7 +37,7 @@ In Istio, from the point of view of the Envoy Proxy within a POD, an app/service
 
 :::{figure-md} upstream and downstream abstraction flow from Envoy concepts
 
-<img src="/ch2-envoy/envoy-high-level-flow/envoy-high-level-flow.assets/envoy-high-level-flow-abstract.drawio.svg" alt="Upstream and downstream abstract flows from Envoy concepts. upstream vs. downstream abstract flow">
+<img src="/envoy-high-level-flow/envoy-high-level-flow.assets/envoy-high-level-flow-abstract.drawio.svg" alt="Upstream and downstream abstract flows from Envoy concepts. upstream vs. downstream abstract flow">
 
 *Figure: upstream and downstream abstraction flows from Envoy concepts*
 :::

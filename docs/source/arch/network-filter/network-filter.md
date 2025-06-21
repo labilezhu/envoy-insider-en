@@ -25,7 +25,7 @@ As I was learning about Envoy's Network Filter framework design, I realized that
 
 :::{figure-md} Figure: Model of Network Filter Framework
 
-<img src="/ch2-envoy/arch/network-filter/network-filter-framework-concept.drawio.svg" alt="Figure - Model of Network Filter Framework">
+<img src="/arch/network-filter/network-filter-framework-concept.drawio.svg" alt="Figure - Model of Network Filter Framework">
 
 *Figure: Model of Network Filter Framework*
 :::
@@ -52,7 +52,7 @@ Now that I've written this, it's time to look at the code. But not directly. Let
 
 :::{figure-md} Figure: Network Filter object relationships
 
-<img src="/ch2-envoy/arch/network-filter/network-filter-hierarchy.drawio.svg" alt="Figure - Network Filter object relationships">
+<img src="/arch/network-filter/network-filter-hierarchy.drawio.svg" alt="Figure - Network Filter object relationships">
 
 *Figure: Network Filter Object Relationships*
 :::
@@ -67,7 +67,7 @@ At the code implementation level, the Network Filter framework has the following
 
 :::{figure-md} Figure: Network Filter framework abstraction collaboration
 
-<img src="/ch2-envoy/arch/network-filter/network-filter-framework.drawio.svg" alt="Figure - Network Filter framework abstraction collaboration">
+<img src="/arch/network-filter/network-filter-framework.drawio.svg" alt="Figure - Network Filter framework abstraction collaboration">
 
 *Figure: Network Filter framework abstraction collaboration*
 :::
@@ -79,7 +79,7 @@ Below, the classic TCP Proxy Filter is used as an example.
 
 :::{figure-md} Figure : Network Filter Framework - TCP Proxy Filter Example
 
-<img src="/ch2-envoy/arch/network-filter/network-filter-tcpproxy.drawio.svg" alt="Figure - Network Filter Framework - TCP Proxy Filter Example">
+<img src="/arch/network-filter/network-filter-tcpproxy.drawio.svg" alt="Figure - Network Filter Framework - TCP Proxy Filter Example">
 
 *Figure : Network Filter Framework - TCP Proxy Filter Example*
 :::
@@ -90,7 +90,7 @@ Below, the classic TCP Proxy Filter is used as an example.
 
 :::{figure-md} Figure : Network Filter - ReadFilter Collaboration
 
-<img src="/ch2-envoy/arch/network-filter/network-filter-readfilter.drawio.svg" alt="Figure - Network Filter - ReadFilter Collaboration">
+<img src="/arch/network-filter/network-filter-readfilter.drawio.svg" alt="Figure - Network Filter - ReadFilter Collaboration">
 
 *Figure : Network Filter - ReadFilter Collaboration*
 :::
@@ -112,7 +112,7 @@ As mentioned before, the Framework itself does not directly provide the Upstream
 
 :::{figure-md} Figure: Network Filter - WriteFilter Collaboration
 
-<img src="/ch2-envoy/arch/network-filter/network-filter-writefilter.drawio.svg" alt="Figure - Network Filter - WriteFilter Collaboration">
+<img src="/arch/network-filter/network-filter-writefilter.drawio.svg" alt="Figure - Network Filter - WriteFilter Collaboration">
 
 *Figure: Network Filter - WriteFilter Collaboration*
 :::

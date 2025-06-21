@@ -5,10 +5,10 @@ typora-root-url: ../../..
 # Listener
 A `Listener`, as the name suggests, is a component that passively listens and accepts connections. Does every Listener listen to a socket? Let's take a look at this question.
 
-Before we start learning about Listener, let's review the example in {doc}`/ch2-envoy/envoy-istio-conf-eg` in the previous section.
+Before we start learning about Listener, let's review the example in {doc}`/envoy-istio-conf-eg` in the previous section.
 
 ```{note}
-Download the Envoy configuration here yaml {download}`envoy@istio-conf-eg-inbound.envoy_conf.yaml </ch2-envoy/envoy-istio-conf-eg.assets/envoy@istio-conf-eg-inbound.envoy_conf.yaml>` .
+Download the Envoy configuration here yaml {download}`envoy@istio-conf-eg-inbound.envoy_conf.yaml </envoy-istio-conf-eg.assets/envoy@istio-conf-eg-inbound.envoy_conf.yaml>` .
 ```
 
 :::{figure-md}
@@ -23,7 +23,7 @@ Download the Envoy configuration here yaml {download}`envoy@istio-conf-eg-inboun
 :::{figure-md}
 :class: full-width
 
-<img src="/ch2-envoy/envoy-istio-conf-eg.assets/envoy@istio-conf-eg-inbound.drawio.svg" alt="Inbound vs Outbound concepts">
+<img src="/envoy-istio-conf-eg.assets/envoy@istio-conf-eg-inbound.drawio.svg" alt="Inbound vs Outbound concepts">
 
 *Figure - Example of Envoy Inbound configuration in Istio*
 
@@ -32,7 +32,7 @@ Download the Envoy configuration here yaml {download}`envoy@istio-conf-eg-inboun
 
 :::{figure-md}
 :class: full-width
-<img src="/ch2-envoy/envoy-istio-conf-eg.assets/envoy@istio-conf-eg-outbound.drawio.svg" alt="Diagram - Example of Envoy Outbound configuration in Istio">
+<img src="/envoy-istio-conf-eg.assets/envoy@istio-conf-eg-outbound.drawio.svg" alt="Diagram - Example of Envoy Outbound configuration in Istio">
 
 *Figure - Envoy Outbound Configuration Example in Istio*
 :::
@@ -66,7 +66,7 @@ As you can see, the name Istio gives to the Listener is a bit hard to understand
 
 ## Listener internal components
 :::{figure-md} Figure: Listener Internal Components
-<img src="/ch2-envoy/arch/listener/listener.assets/listener.drawio.svg" alt="Figure - Listener Internal Components">
+<img src="/arch/listener/listener.assets/listener.drawio.svg" alt="Figure - Listener Internal Components">
 
 *Figure: Listener Internal Components*
 :::
@@ -97,7 +97,7 @@ Each `Network Filter Chain` consists of sequentialized `Network Filters`. The `N
 
 ## Listener related components and startup sequence
 :::{figure-md} Figure: Listener core objects and startup sequence
-<img src="/ch2-envoy/arch/listener/listener.assets/listener-core-classes-startup-process.drawio.svg" alt="Figure - Listener core objects and startup sequence">
+<img src="/arch/listener/listener.assets/listener-core-classes-startup-process.drawio.svg" alt="Figure - Listener core objects and startup sequence">
 
 *Figure: Listener core objects and startup sequence*
 :::
@@ -140,7 +140,7 @@ If you're careful, you'll see something trick:
 
 ### Code-level startup sequence
 :::{figure-md} Figure: Listener TCP Connection Establishment Flow
-<img src="/ch2-envoy/arch/listener/listener.assets/envoy-classes-listen-flow.drawio.svg" alt="Figure - Listener TCP connection establishment flow">
+<img src="/arch/listener/listener.assets/envoy-classes-listen-flow.drawio.svg" alt="Figure - Listener TCP connection establishment flow">
 
 *Figure: Listener TCP connection establishment flow*
 :::

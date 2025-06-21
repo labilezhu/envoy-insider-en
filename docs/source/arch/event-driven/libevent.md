@@ -7,7 +7,7 @@ typora-root-url: ../../..
 There are two important concepts in `libevent`: `event_base` and `event`.
 
 
-![](/ch2-envoy/arch/event-driven/libevent.assets/libevent.drawio.svg)
+![](/arch/event-driven/libevent.assets/libevent.drawio.svg)
 
 
 ## event
@@ -182,7 +182,7 @@ Events have similar lifecycles:
 
 
 
-![libevent-6-event-state.png](/ch2-envoy/arch/event-driven/libevent.assets/1538970316042-d588bff5-1f5f-4f49-ad6a-e078ba0f9df9.png)
+![libevent-6-event-state.png](/arch/event-driven/libevent.assets/1538970316042-d588bff5-1f5f-4f49-ad6a-e078ba0f9df9.png)
 
 [Event State Transform Diagram of Libevent - from https://developer.aliyun.com/article/659277#fromHistory]
 

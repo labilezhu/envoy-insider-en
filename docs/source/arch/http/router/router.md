@@ -5,7 +5,7 @@ Router process in a nutshell:
 
 :::{figure-md} Figure: Router Router process in a nutshell
 :class: full-width
-<img src="/ch2-envoy/arch/http/router/router.assets/router-filter-base-flow.drawio.svg" alt="Diagram - Router flow sketch">
+<img src="/arch/http/router/router.assets/router-filter-base-flow.drawio.svg" alt="Diagram - Router flow sketch">
 
 *Figure: Router Router process in a nutshell*
 :::
