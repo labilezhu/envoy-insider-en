@@ -16,10 +16,8 @@ Some readers may wonder why split Envoy into a separate book. Recently, I’ve n
 This book includes: Envoy source code deep dive, in-depth Envoy fundamentals  analysis. But it's not a traditional "deep dive xyz source code" type of book. on the contrary, I have done my best not to directly paste source code in the book. Reading source code is a necessary step to grasp the details of the implementation, but browsing source code in a book is generally a very bad experience. So, this book uses source code navigation diagrams to let readers understand the full picture of the implementation, rather than getting lost in the details of fragmented source code snippets and forgetting the whole picture.
 
 In this book, I've tried to think as systematically as possible from a design and implementation perspective:
-- The design and implementation details of Envoy
-- The Truth Behind Those Magic Configurations: Linux + Envoy
-  - How traffic is intercepted to the Envoy using Linux's netfilter technology.
-  - How istiod programs the Envoy to fulfill the traffic policies of the Service Mesh.
+- The reasons behind the design decisions and history of evolution.
+- Deep dive into the high level concept and implementation details of Envoy.
 
 
 The book is just a collection of thoughts and notes after I've been researching and using Istio for a while. I've just been troubleshooting some Istio/Envoy related functionality and performance issues, and browsing and debugging some Istio/Envoy code.

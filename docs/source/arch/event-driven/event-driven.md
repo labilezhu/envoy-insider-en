@@ -49,46 +49,11 @@ Now let's look at the process and the relationship between the event drivers and
 
 
 
-## Event Handling Abstraction Framework
-
-The above describes the underlying process of event handling at the kernel syscall level. The following section describes how events are abstracted and encapsulated at the Envoy code level.
-
-Envoy uses `libevent`, an event library written in C, with C++ OOP encapsulation.
-
-:::{figure-md} Figure: Abstract encapsulation model of Envoy events
-
-<img src="/arch/event-driven/event-driven.assets/abstract-event-model.drawio.svg" alt="Figure - Abstract encapsulation model of Envoy events">
-
-*Figure: Abstract encapsulation model of Envoy events*
-:::
-*[Open with Draw.io](https://app.diagrams.net/?ui=sketch#Uhttps%3A%2F%2Fenvoy-insider.mygraphql.com%2Fzh_CN%2Flatest%2F_images%2Fabstract-event-model.drawio.svg)*
 
 
-
-How do you quickly read the core process logic in a project that is heavy (or even excessive) on OOP encapsulation and OOP Design Patterns, instead of drifting directionlessly in a sea of source code? The answer is: find the main flow. For Envoy's event handling, the main flow is, of course, `libevent`'s `event_base`, `event`. If you're not familiar with `libevent`, check out the `libevent Core Ideas` section of this book.
-
-- `event` is encapsulated in an `ImplBase` object. 
-- `event_base` is included under `LibeventScheduler` <- `DispatcherImpl` <- `WorkerImpl` <- `ThreadImplPosix`.
-
-The different types of `event` are then encapsulated into different `ImplBase` subclasses:
-- TimerImpl
-- SchedulableCallbackImpl
-- FileEventImpl
-
-Other information is already detailed in the diagram above, so I won't go into more detail.
-
-## libevent Core Ideas
 
 ```{toctree}
 libevent.md
+event-model.md
 ```
 
-
-## Extended reading
-
-If you are interested in studying the implementation details, I recommend checking out the articles on my Blog:
-
- - [Reverse Engineering and Cloud Native Field Analysis Part3 -- eBPF Trace Istio/Envoy Event Driven Model, Connection Establishment, TLS Handshake and filter_chain Selection](https://blog.mygraphql.com/zh/posts/low-tec/trace/trace-istio/trace-istio-part3/)
- - [BPF tracing istio/Envoy - Part4: Upstream/Downstream Event-Driven Collaboration of Envoy@Istio](https://blog.mygraphql.com/en/posts/low-tec/trace/trace-istio/trace-istio-part4/)
-
-And last but not least: Envoy author Matt Klein: [Envoy threading model](https://blog.envoyproxy.io/envoy-threading-model-a8d44b922310)

@@ -41,3 +41,20 @@ This book uses both styles of diagrams. However, the latter is more commonly use
 
 
 
+## How to Comprehend the Complex UML Diagrams in This Book
+
+:::{figure-md} How to Comprehend the Complex UML Diagrams in This Book
+
+<img src="/arch/event-driven/event-driven.assets/abstract-event-model.drawio.svg" alt="How to Comprehend the Complex UML Diagrams in This Book">
+
+*How to Comprehend the Complex UML Diagrams in This Book*
+:::
+*[Open in Draw.io](https://app.diagrams.net/?ui=sketch#Uhttps%3A%2F%2Fenvoy-insider.mygraphql.com%2Fzh_CN%2Flatest%2F_images%2Fabstract-event-model.drawio.svg)*
+
+Some diagrams in this book are quite complex. I've spent a great deal of time studying them, and my understanding is captured in the diagrams themselves in various ways. Take the diagram above as an example: even if I set it aside for a year, it would still take considerable effort for me to decipher it again. That’s why the word *“comprehend”* (or even *“penetrate”*) feels appropriate here. That said, there are some helpful methods:
+
+1. Read the legend.
+2. Analyze static structure and relationships at design time:
+   1. Browse the components (classes) in the diagram, and try to remember their names. Look through each component's properties. Based on that information, try to interpret their responsibilities.
+   2. For UML diagrams, examine relationships between components (classes) such as inheritance, implementation, composition, and aggregation.
+3. Understand the runtime processes and relationships: control flow and data flow.
