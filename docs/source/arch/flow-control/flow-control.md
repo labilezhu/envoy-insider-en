@@ -31,29 +31,35 @@ The following is a simple TCP implementation detailing the flow control process,
 - `back up` - A situation in which data is congested in one or more intermediate buffers due to slow or poor traffic flow to the destination, resulting in the buffer running out of space.
 - `buffers fill up` - the cache space reaches the upper limit.
 - `backpressure` - Stream backpressure is a feedback mechanism that allows the system to respond to requests rather than crashing under load when processing capacity is exceeded. This occurs when the rate of incoming data exceeds the rate of processing or outputting data, leading to congestion and potential data loss. For more details, see:[Backpressure explained - the resisted flow of data through software](https://medium.com/@jayphelps/backpressure-explained-the-flow-of-data-through-software-2350b3e77ce7)
-- `drained` - The emptying of a Buffer. Generally refers to the processing and draining of a buffer from above the low watermark, down to below the low watermark after consumption, or even empty.
+- High/Low Watermark - High and low watermark design patterns for controlling memory or buffer consumption but not wanting to trigger control operations with frequent high-frequency jitter, see "[What are high and low water marks in bit streaming](https://stackoverflow.com/questions/45489405/what-are-high-and-low-water-marks-in-bit-streaming)" for details.
+- `drained` - This term describes the process of emptying a buffer. Typically, when the buffer's data volume surpasses a "high watermark," the system throttles or "rate-limits" the input source. The existing data in the buffer is then continuously processed and removed until the volume drops below a "low watermark" or the buffer is cleared out.
 - `HTTP/2 window` - The HTTP/2 standard implementation of flow control that indicates, via the `WINDOW_UPDATE` frame, the number of octets the sender may transmit in addition to the existing flow control window. See "[Hypertext Transfer Protocol Version 2 (HTTP/2) - 5.2. Flow Control](https://httpwg.org/specs/rfc7540.html#FlowControl) for details. "
 - `http stream` - The HTTP/2 standard for streams. For details, see "[Hypertext Transfer Protocol Version 2 (HTTP/2) - 5. Streams and Multiplexing](https://httpwg.org/specs/rfc7540.html#StreamsLayer)"
-- High/Low Watermark - High and low watermark design patterns for controlling memory or buffer consumption but not wanting to trigger control operations with frequent high-frequency jitter, see "[What are high and low water marks in bit streaming](https://stackoverflow.com/questions/45489405/what-are-high-and-low-water-marks-in-bit-streaming)" for details.
 
 
 
 ## TCP flow control implementation
-Flow control for TCP and `TLS endpoints` is handled through the coordination between the `Network::ConnectionImpl` Write Buffer and the `Network::TcpProxy` Filter.
+Flow control for TCP and `TLS endpoints` is handled through the coordination between the Write Buffer of `Network::ConnectionImpl` and the `Network::TcpProxy` Filter.
 
 The flow control for `Downstream` is as follows.
 - Downstream `Network::ConnectionImpl::write_buffer_` buffers too much data. It calls `Network::ConnectionCallbacks::onAboveWriteBufferHighWatermark()`.
 - `Network::TcpProxy::DownstreamCallbacks` receives `onAboveWriteBufferHighWatermark()` and calls `readDisable(true)` on the Upstream connection.
 - When the Downstream is finished processing (`drained`), it calls `Network::ConnectionCallbacks::onBelowWriteBufferLowWatermark()` on the Upstream connection.
 - `Network::TcpProxy::DownstreamCallbacks` receives `onBelowWriteBufferLowWatermark()` and calls `readDisable(false)` on the Upstream connection.
+
+
+
 The flow control for `Upstream` is roughly the same.
+
 - Upstream `Network::ConnectionImpl::write_buffer_` buffers too much data. It calls `Network::ConnectionCallbacks::onAboveWriteBufferHighWatermark()`.
 - `Network::TcpProxy::UpstreamCallbacks` receives `onAboveWriteBufferHighWatermark()` and calls `readDisable(true)` on the Downstream connection.
 - When the Upstream has finished processing (`drained`), it calls `Network::ConnectionCallbacks::onBelowWriteBufferLowWatermark()` on the Downstream connection.
 - `Network::TcpProxy::UpstreamCallbacks` receives `onBelowWriteBufferLowWatermark()` and calls `readDisable(false)` on Downstream connections.
 
 
-The subsystem and Callback mechanism can be found in this book in the section: {ref}`ch2-envoy/arch/oop/oop:Callback design pattern`.
+
+
+The subsystem and Callback mechanism can be found in this book in the section: {ref}`arch/oop/oop:Callback design pattern`.
 
 
 

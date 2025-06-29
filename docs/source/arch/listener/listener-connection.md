@@ -25,7 +25,7 @@ Take a look at the code to get a general idea of how the connection is establish
 
 
 The steps are:
-1. epoll receives the connection request and completes 3 handshakes. It is better to callback to TcpListenerImpl::onSocketEvent().
+1. epoll receives the connection request and completes 3 handshakes. At the end, callback to TcpListenerImpl::onSocketEvent().
 2. eventually syscall `accept()` to get the FD of the new socket.
 3. call ActiveTcpListener::onAccept()
 4. create a new connection-specific `ListenerFilterChain`. 
